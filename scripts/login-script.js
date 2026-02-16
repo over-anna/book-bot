@@ -1,11 +1,21 @@
-console.log("password is: lasagna");
+document.addEventListener('DOMContentLoaded', function () {
+
+    console.log("password is: lasagna");
+});
+
+
+
+
 
 //when button clicked, get username and password. 
 
-//pass an Immediately Invoked Function Expression: IIFE.
-document.addEventListener('submit', function (event) {
-  event.preventDefault();
+const login = document.getElementById('login-button');
 
+//pass an Immediately Invoked Function Expression: IIFE.
+login.addEventListener('click', function (event) {
+  console.log('clicked');
+  
+  
   // Get form values from the DOM 
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
@@ -15,6 +25,8 @@ document.addEventListener('submit', function (event) {
   // Store in session storage
   sessionStorage.setItem('username', username);
   sessionStorage.setItem('password', password);
+  sessionStorage.setItem('isAuthN', 'true');
+ 
   // sessionStorage.setItem('loginTimestamp', new Date().toISOString());
   // sessionStorage.setItem('loginAttempts', (parseInt(sessionStorage.getItem('loginAttempts') || '0') + 1).toString());
 
@@ -22,7 +34,8 @@ document.addEventListener('submit', function (event) {
   console.log('session username:', username);
   console.log('session password:', password);
 
-  window.location.assign("content.html"); 
+
+  window.location.assign("../index.html"); 
 
 });
 
