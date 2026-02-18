@@ -40,15 +40,20 @@
 
           <form class="d-flex align-items-center gap-2 justify-content-center">
 
-            <input class="form-control form-control-lg flex-grow-1 rounded-pill" disabled  type="search" placeholder="search for anything..."
-              aria-label="Search">
 
-            <button class="btn btn-link text-dark fs-4 p-1" type="button" title="Sort" disabled>
-              <i class="bi bi-arrow-down-up"></i>
-            </button>
+            <input class="form-control form-control-sm flex-grow-1 rounded-pill" type="text" id="searchInput"
+              placeholder="Search..." />
 
-            <button class="btn btn-link text-dark fs-4 p-1" type="button" title="Filter" disabled>
-              <i class="bi bi-funnel"></i>
+            <button id="searchButton" class="rounded-pill">go</button>
+
+            <p id="searchMessage"></p>
+            <ul id="searchResults"></ul>
+            <script src="assets/data/data.js"></script>
+            <!-- <script src="scripts/step0-hardcode-hotel.js"></script> -->
+            <!-- <script src="scripts/step1-for-loop-input-search.js"></script> -->
+            <!-- <script src="scripts/step2-clean-input-search.js"></script> -->
+            <!-- <script src="scripts/step3-controlled-object-search.js"></script> -->
+            <script src="scripts/step4-global-object-search.js"></script>
             </button>
 
           </form>
@@ -104,5 +109,3 @@
 </body>
 
 </html>
-
-
