@@ -24,7 +24,7 @@ function handleGlobalObjectSearch() {
   const query = searchInput.value.trim().toLowerCase();
   if (!query) {
     renderObjectResults(jsObjectData);
-    searchMessage.textContent = "Type to search all fields";
+    searchMessage.textContent = "Type to search all books";
     return;
   }
   
@@ -58,4 +58,5 @@ searchButton.addEventListener("click", handleGlobalObjectSearch);
 
 // Initial render
 renderObjectResults(jsObjectData);
-searchMessage.textContent = "Type to search all fields";
+searchMessage.textContent = "Type to search all books";
+
