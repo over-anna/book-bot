@@ -1,4 +1,4 @@
-# verbose-octo-telegram-dontknow
+# Book Bot
 CIS 376 Spring 2026 Course Page
 
 possible ideas:
