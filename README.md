@@ -1,5 +1,8 @@
 # Book Bot
-CIS 376 Spring 2026 Course Page
+
+Made by Anna Patillo
+
+As a reader, I want to search book summaries so I can get my next read.
 
 possible ideas:
 - Digital Library for Book Recommendations (Netflix, but for books)
