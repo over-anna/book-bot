@@ -1,16 +1,15 @@
 # Book Bot
-
 Made by Anna Patillo
-
+"The Library of all Libraries"
 As a reader, I want to search book summaries so I can get my next read.
 
-possible ideas:
-- Digital Library for Book Recommendations (Netflix, but for books)
+REPO : <a href="https://github.com/over-anna/book-bot">CLICK ME<a>
+APP : <a href="https://over-anna.github.io/book-bot/">CLICK ME<a>
+INSPIRATION : <a href="https://github.com/over-anna/book-bot/issues/6">CLICK ME<a>
 
+CODE SNIPPET :
+```
+will go here
+```
+explanation goes here (what triggers, what changes, what data flows)
 
-I like the layout of the amazon page. The different categories being their own buttons makes it nice to look at.
-<img width="1346" height="588" alt="image" src="https://github.com/user-attachments/assets/08a02ced-3ee4-4694-92b8-7e82c7d991a4" />
-
-
-The Netflix page layout is nice. I like the search bars being a menu off at the top.
-<img width="2000" height="1125" alt="image" src="https://github.com/user-attachments/assets/2a8f8cf1-7e76-46fe-bb31-cce5809f0875" />
