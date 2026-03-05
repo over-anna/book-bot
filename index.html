@@ -17,7 +17,7 @@
 
       <!-- Row 1: primary (dark) -->
       <div class="w-100 px-3 py-2 d-flex align-items-center">
-        <a class="navbar-brand fw-bold mb-0" href="#">bookbot.</a>
+        <a class="navbar-brand fw-bold mb-0" href="#">bookbot!</a>
 
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,9 +26,10 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-            <li class="nav-item"><a class="nav-link" href="#">about.</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">cnvs.</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">full catelogue</a></li>
           </ul>
+          <span id="userGreeting" class="text-light"></span>
           <a href="pages/login.html" id="btnLogin" class="btn btn-light ms-sm-3 d-none" type="button">login</a>
           <button id="btnLogout" class="btn btn-outline-light ms-sm-3 d-none" type="button">logout</a>
         </div>
@@ -40,20 +41,16 @@
 
           <form class="d-flex align-items-center gap-2 justify-content-center">
 
+            <input id="searchBox" class="searchClass form-control form-control-lg flex-grow-1 rounded-pill" disabled type="search"
+              placeholder="search for anything..." aria-label="Search">
 
-            <input class="form-control form-control-sm flex-grow-1 rounded-pill" type="text" id="searchInput"
-              placeholder="Search by book title, author, or rating..." />
+            <button class="searchClass btn btn-link text-dark fs-4 p-1" type="button" title="Sort"
+              disabled>
+              <i class="bi bi-arrow-down-up"></i>
+            </button>
 
-            <button id="searchButton" class="rounded-pill">go</button>
-
-            <p id="searchMessage"></p>
-            <ul id="searchResults"></ul>
-            <script src="assets/data/data.js"></script>
-            <!-- <script src="scripts/step0-hardcode-hotel.js"></script> -->
-            <!-- <script src="scripts/step1-for-loop-input-search.js"></script> -->
-            <!-- <script src="scripts/step2-clean-input-search.js"></script> -->
-            <!-- <script src="scripts/step3-controlled-object-search.js"></script> -->
-            <script src="scripts/step4-global-object-search.js"></script>
+            <button class="searchClass btn btn-link text-dark fs-4 p-1" type="button" title="Filter" disabled>
+              <i class="bi bi-funnel"></i>
             </button>
 
           </form>
@@ -64,15 +61,15 @@
     </div>
   </nav>
 
+  <!-- todo: why no centered?  -->
+  <div class="align-items-center">
+    <h1 class="m-2 p-2" text-align: center>The Library of all Libraries</h1>
+  </div>
 
-
-
-
-  <!-- ...existing code... -->
-
-  <!-- ...existing code... -->
-
-
+  <!-- video content -->
+  <div class="container my-4">
+    <div id="videoGrid" class="row g-3"></div>
+  </div>
 
   <!-- ...existing code... -->
 
@@ -82,16 +79,16 @@
     <div class="container">
       <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
 
-        <a href="https://github.com/over-anna/bookbot"
+        <a href="https://github.com/barrycumbie/bearbot"
           class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
           &lt; <i class="bi bi-github"></i> source code &gt;
         </a>
 
         <span>
-          &copy; bookbot 2026
+          &copy; 2026
         </span>
 
-        <a href="https://github.com/over-anna"
+        <a href="https://github.com/barrycumbie"
           class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
           <i class="bi bi-github"></i>
           <i class="bi bi-person-circle"></i>
@@ -105,10 +102,11 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
+  <!-- <script src="scripts/session.js"></script>   -->
+  <script src="scripts/videos.js"></script>
   <script src="scripts/login-logout.js"></script>
+  <script src="scripts/search.js"></script>
+  
 </body>
 
 </html>
-
-
-
