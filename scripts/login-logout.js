@@ -1,15 +1,41 @@
-// show login or logout btn, based on session state
-// toast msg upon logout 
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  showSignInOut(); 
+  const userGreeting = document.getElementById('userGreeting');
+  const searchClass = document.getElementsByClassName('searchClass');
+  userGreeting.textContent = '';
 
-  document.getElementById('btnLogout').addEventListener('click', ()=>{
-    showLogoutToast(); 
+  const authStatus = isAuthN(); 
+  console.log('isAuthN?', authStatus);
+
+  showSignInOut();
+
+  if (authStatus === true) {
+    userGreeting.textContent = `hello, ${sessionStorage.getItem('username')}`;
+
+    Object.keys(searchClass).forEach(key => {
+      searchClass[key].removeAttribute('disabled');
+    });
+
+    loadVideoContent();
+
+  }
+
+
+  document.getElementById('btnLogout').addEventListener('click', () => {
+    showLogoutToast();
     sessionStorage.clear();
-    showSignInOut(); 
-  }); 
+    console.log('isAuthN?', sessionStorage.getItem('isAuthN'));
+    showSignInOut();
+    userGreeting.textContent = '';
+
+    Object.keys(searchClass).forEach(key => {
+      searchClass[key].disabled = true;
+      searchClass[key].value = '';
+    });
+
+    unloadVideoContent();
+  });
 
 });
 
@@ -17,33 +43,29 @@ document.addEventListener('DOMContentLoaded', () => {
 function isAuthN() {
   return sessionStorage.getItem('isAuthN') === 'true';
 }
+
 function showSignInOut() {
   if (isAuthN()) {
-    //show logout
-    const btnLogout = document.getElementById('btnLogout');
-    btnLogout.classList.remove('d-none'); 
 
-    //hide login
+    const btnLogout = document.getElementById('btnLogout');
+    btnLogout.classList.remove('d-none');
+
     const btnLogin = document.getElementById('btnLogin');
-    btnLogin.classList.add('d-none'); 
+    btnLogin.classList.add('d-none');
   }
-  else if(!isAuthN()){
-     //hide logout
-    const btnLogout = document.getElementById('btnLogout');
-    btnLogout.classList.add('d-none'); 
+  else if (!isAuthN()) {
 
-    //show login
+    const btnLogout = document.getElementById('btnLogout');
+    btnLogout.classList.add('d-none');
+
     const btnLogin = document.getElementById('btnLogin');
-    btnLogin.classList.remove('d-none'); 
+    btnLogin.classList.remove('d-none');
   }
 
 }
 
-// Show a Bootstrap 5 toast message for logout
 function showLogoutToast() {
-  // Create toast container if it doesn't exist
   const toastContainer = document.getElementById('toast-container');
-  // Create toast element
   const toast = document.createElement('div');
   toast.className = 'toast align-items-center text-bg-success border-0 show';
   toast.setAttribute('role', 'alert');
@@ -59,9 +81,7 @@ function showLogoutToast() {
   `;
   toastContainer.appendChild(toast);
 
-  // Automatically remove toast after 3 seconds
   setTimeout(() => {
     toast.remove();
   }, 3000);
 }
-
