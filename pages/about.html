@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,76 @@
     <link href="../styles/book-style.css" rel="stylesheet">
 </head>
 
-<div class="align-items-center">
-    <h1 class="m-2 p-2">About BookBot!</h1>
-</div>
+<body class="d-flex flex-column min-vh-100">
 
-<div>
-    <p>Bookbot is a website specifically designed to find audiobooks. Just search for the book you want, read the
-        summary, and hop right in!</p>
-    <p>BookBot features the title, author, cover art, audiobook links, and duration of each audiobook on the main page.
-    </p>
-</div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top p-0">
+        <div class="container-fluid flex-column align-items-stretch px-0">
+
+            <!-- Row 1: primary (dark) -->
+            <div class="w-100 px-3 py-2 d-flex align-items-center">
+                <a class="navbar-brand fw-bold mb-0" href="../index.html">bookbot!</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">search</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-light border-top py-3"></div>
+        </div>
+    </nav>
+
+    <!-- Heaading -->
+    <div class="align-items-center">
+        <h1 class="m-2 p-2">All About BookBot!</h1>
+    </div>
+
+    <!-- content -->
+    <div class="container">
+        <p>Welcome to BookBot!</p>
+        <p>BookBot is specifically designed to find free audiobooks. If you already know what you're looking for, just
+            search the title and navigate to the linked youtube audiobook. If you're not sure what you're looking for,
+            you can search by authors or genres! Each book includes a summary so you can get a glimpse of what you'd be
+            in for.</p>
+        <p>Click the search icon at the top and log in to get started. </p>
+        <p>Happy listening!</p>
+    </div>
+
+    <!-- footnote decor -->
+
+    <footer class="mt-auto py-3 bg-light border-top">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
+
+                <a href="https://github.com/over-anna/book-bot"
+                    class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1"
+                    target="_blank">
+                    &lt; <i class="bi bi-github"></i> source code &gt;
+                </a>
+
+                <span>
+                    &copy; 2026 BookBot
+                </span>
+
+                <a href="https://github.com/over-anna"
+                    class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1"
+                    target="_blank">
+                    <i class="bi bi-github"></i>
+                    <i class="bi bi-person-circle"></i>
+                    GitHub Profile
+                </a>
+
+            </div>
+        </div>
+    </footer>
+    <div id="toast-container" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1080;"></div>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
