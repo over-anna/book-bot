@@ -1,5 +1,5 @@
 # Book Bot - Free Audiobook Finder
-<p>Made by Anna Patillo, using a code baseline from Barry Cumbie's <a href="https://github.com/barrycumbie/bearbot>BearBot</a> as well as BootStrap styling.</p>
+<p>Made by Anna Patillo, using a code baseline from Barry Cumbie's <a href="https://github.com/barrycumbie/bearbot">BearBot</a> as well as BootStrap styling.</p>
 <p>"The Library of all Libraries"</p>
 <p>As a reader, I want to search book summaries so I can find a new audiobook for free.</p>
 
