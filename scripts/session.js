@@ -1,7 +1,7 @@
 
 // Utility: check if user is authenticated (isAuth === 'true')
 function isAuthN() {
-	console.log(sessionStorage.getItem('isAuthN')); 
+	console.log('isAuthN?', sessionStorage.getItem('isAuthN')); 
   return sessionStorage.getItem('isAuthN') === 'true';
   
 }
