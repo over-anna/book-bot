@@ -45,6 +45,15 @@
       "cover": "https://www.penguin.co.uk/_next/image?url=https%3A%2F%2Fcdn.penguin.co.uk%2Fdam-assets%2Fbooks%2F9781784752637%2F9781784752637-jacket-large.jpg&w=379&q=100",
       "duration": "12:15:08",
       "genre": ["thriller", "southern gothic", "legal", "history"]
+    },
+    {
+      "title": "Twilight",
+      "description": "Twilight (stylized as twilight) is a 2005 young adult vampire-romance novel by author Stephenie Meyer. It is the first book in the Twilight series, and introduces seventeen-year-old Isabella 'Bella' Swan, who moves from Phoenix, Arizona, to Forks, Washington. She is endangered after falling in love with Edward Cullen, a 103-year-old vampire frozen in his 17-year-old body.",
+      "author": "Stephenie Meyer",
+      "url": "https://www.youtube.com/watch?v=87cOrp-5LWk",
+      "cover": "https://m.media-amazon.com/images/I/615ZIxEDozL._AC_UF1000,1000_QL80_.jpg",
+      "duration": "9:23:13",
+      "genre": ["romance", "fantasy", "horror", "vampire", "drama"]
     }
   ]
 }
